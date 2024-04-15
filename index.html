@@ -1,1 +1,147 @@
-Sonido Chungo
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face { font-family: PermanentMarker; src: url('PM.ttf'); }
+      p, center {
+         font-family: PermanentMarker;
+      }
+
+body {
+	background-color: #fae100;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+}
+
+.top-container {
+  background-color: #fae100;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+	height: 100%;
+	width: 100%;
+  background: #55555500;
+  color: #f1f1f1;
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden;
+  background-image: url("images/bottomlsd.png");
+  background-repeat: repeat-x;
+  transform: rotate(0deg);
+
+}
+
+.bottom {
+	height: 100%;
+	width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0px;
+  /* align-self: flex-end; */
+  background-color:#11111100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden;
+	background-image: url("images/bottomlsd.png");
+  background-repeat: repeat-x;
+  transform: rotate(180deg);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.center {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.left {
+	height: 100%;
+	width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  /* align-self: flex-end; */
+  background-color:#11111100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden;
+	background-image: url("images/bottomlvsd.png");
+  background-repeat: repeat-y;      
+}
+
+.right {
+	height: 100%;
+	width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  /* align-self: flex-end; */
+  background-color:#11111100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden;
+	background-image: url("images/bottomlvsd.png");
+  background-repeat: repeat-y;     
+  transform: rotate(180deg);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader">
+<p></p>
+	<!--<img src="images/top.png" style="max-width: fit-content; float:top; margin-left:-20px; margin-top:-20px"/> -->
+</div>
+
+<div class="left">
+ <!-- <img src="images/left.png" style="max-width: fit-content; float:left; margin-left:-20px; margin-top:-20px"/>-->
+</div>
+
+<div class="right">
+	<!--<img src="images/right.png" style="width: 30%; float:right; margin-right:-20px; margin-top:-20px"/>-->
+</div>
+
+<div class="content">
+  <img class="center" src="images/logo.png" style="margin-top: 100px" />
+  <p class="center">
+    <center>Sonamos chungo y lo pasamos bien</center>
+    <center style="font-size: 150%;">contacto@sonidochungo.es</center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </p>
+</div>
+
+
+<div class="bottom">
+  <!--<img src="images/bottom.png" style="float:bottom; object-position: bottom; margin-left:-20px; margin-bottom:-30px;" />-->
+</div>
+
+
+
+</body>
+</html>
